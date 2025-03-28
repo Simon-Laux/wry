@@ -352,6 +352,9 @@ mod proxy;
 mod util;
 mod web_context;
 
+#[cfg(any(target_os = "macos", target_os = "ios", gtk))]
+mod wk_content_rule_list;
+
 #[cfg(target_os = "android")]
 pub(crate) mod android;
 #[cfg(target_os = "android")]

@@ -129,6 +129,8 @@ objc2-web-kit = { version = "0.3.0", default-features = false, features = [
   "WKNavigationResponse",
   "WKUserScript",
   "WKHTTPCookieStore",
+  "WKContentRuleList",
+  "WKContentRuleListStore",
 ] }
 objc2-core-foundation = { version = "0.3.0", default-features = false, features = [
   "std",

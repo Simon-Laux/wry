@@ -74,4 +74,10 @@ pub enum Error {
   #[cfg(any(target_os = "macos", target_os = "ios"))]
   #[error("data store is currently opened")]
   DataStoreInUse,
+  #[cfg(any(target_os = "macos", target_os = "ios"))]
+  #[error("failed to get default content rule store")]
+  FailedToGetDefaultContentRuleStore,
+  #[cfg(any(target_os = "macos", target_os = "ios"))]
+  #[error("NSError: {0}")]
+  NSError(String),
 }
